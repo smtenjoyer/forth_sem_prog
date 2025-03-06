@@ -1,8 +1,8 @@
 [
 {
   "directory": "D:/Programming/projects/TECH/3lab/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -g -o CMakeFiles\\UML.dir\\main.cpp.obj -c D:\\Programming\\projects\\TECH\\3lab\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -g -o CMakeFiles\\FactoryMethod.dir\\main.cpp.obj -c D:\\Programming\\projects\\TECH\\3lab\\main.cpp",
   "file": "D:\\Programming\\projects\\TECH\\3lab\\main.cpp",
-  "output": "CMakeFiles\\UML.dir\\main.cpp.obj"
+  "output": "CMakeFiles\\FactoryMethod.dir\\main.cpp.obj"
 }
 ]

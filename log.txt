@@ -1,0 +1,5 @@
+2025-03-06 10:50:55 [FILE] Game started!
+2025-03-06 10:52:02 [FILE] Avatar was created
+2025-03-06 10:52:20 [FILE] Enemy was created
+2025-03-06 10:52:20 [FILE] Game processing...
+2025-03-06 10:53:07 [FILE] Game was ended. You lost the duel!

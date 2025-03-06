@@ -64,7 +64,7 @@ UpdateType: git
 
 # Compiler info
 Compiler: C:/msys64/mingw64/bin/c++.exe
-CompilerVersion: 13.2.0
+CompilerVersion: 14.2.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -94,6 +94,9 @@ TimeOut: 1500
 # During parallel testing CTest will not start a new test if doing
 # so would cause the system load to exceed this value.
 TestLoad: 
+
+TLSVerify: 
+TLSVersion: 
 
 UseLaunchers: 
 CurlOptions: 

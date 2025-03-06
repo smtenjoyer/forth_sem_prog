@@ -1,3 +1,3 @@
-# ninja log v5
-6	316	7622794147945712	CMakeFiles/UML.dir/main.cpp.obj	faadc8dbceefa0a
-316	418	7622794148947767	UML.exe	463c70b0fe602825
+# ninja log v6
+6	717	7629437049368570	CMakeFiles/FactoryMethod.dir/main.cpp.obj	4e85382bb182b25d
+718	899	7629437056487577	FactoryMethod.exe	1f9439dbbb14cc41
