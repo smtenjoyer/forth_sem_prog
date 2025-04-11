@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/15handed.png</file>
+        <file>images/air.jpg</file>
+        <file>images/airemblem.png</file>
+        <file>images/fire.jpg</file>
+        <file>images/fireemblem.png</file>
+        <file>images/Illustration.jpg</file>
+        <file>images/Illustration2.jpg</file>
+        <file>images/Illustration3.jpg</file>
+        <file>images/Illustration4.jpg</file>
+        <file>images/onehanded.png</file>
+        <file>images/terraemblem.png</file>
+        <file>images/terrs.jpg</file>
+        <file>images/twohanded.png</file>
+        <file>images/water.jpg</file>
+        <file>images/wateremblem.png</file>
+        <file>images/art1.png</file>
+        <file>images/art2.png</file>
+        <file>images/back.jpg</file>
+        <file>images/vol1.png</file>
+        <file>images/vol2.png</file>
+        <file>images/5Attack.png</file>
+        <file>images/5Stand.png</file>
+        <file>images/airStand.png</file>
+        <file>images/artDamage.png</file>
+        <file>images/backart.png</file>
+        <file>images/fireStand.png</file>
+        <file>images/heroAttack.png</file>
+        <file>images/heroDamage.png</file>
+        <file>images/heroStand.png</file>
+        <file>images/oneAttack.png</file>
+        <file>images/oneStand.png</file>
+        <file>images/terraStand.png</file>
+        <file>images/twoAttack.png</file>
+        <file>images/twoStand.png</file>
+        <file>images/waterStand.png</file>
+        <file>images/artAttack.png</file>
+        <file>images/artstand.png</file>
+        <file>images/defeated.png</file>
+        <file>images/omg.png</file>
+        <file>images/winned.png</file>
+        <file>images/versus.jpg</file>
+        <file>images/yn.gif</file>
+    </qresource>
+</RCC>
