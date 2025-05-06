@@ -9,6 +9,15 @@
 #include <QEventLoop>
 #include <QTimer>
 
+QLineEdit* MainWindow::getLineEdit2() const {
+    return ui->lineEdit_2;
+}
+
+QLineEdit* MainWindow::getweaponName() const {
+    return ui->weaponName;
+}
+
+
 void MainWindow::checkAndConnect()
 {
     // Проверяем, выбрано ли значение в комбобоксе (индекс больше 0) и введен ли текст
@@ -207,7 +216,6 @@ void MainWindow::updateHealthUI() {
 }
 
 
-// Внимание: Это ОЧЕНЬ плохой стиль для Qt, но он работает
 void delay(int milliseconds) {
     QEventLoop loop;
     QTimer::singleShot(milliseconds, &loop, &QEventLoop::quit);
@@ -224,7 +232,6 @@ void MainWindow::showHeroAttack() {
         label2->setText(QString::fromStdString(message));
     }
 
-    // Задержка с использованием QEventLoop (ПЛОХОЙ СТИЛЬ)
     delay(1000);
 
     showEnemyAttack();
@@ -292,22 +299,6 @@ MainWindow::MainWindow(QWidget *parent)
     weaponImages["water magic wand"]   = ":/images/water.jpg";
     weaponImages["air magic wand"] = ":/images/air.jpg";
     weaponImages["terra magic wand"] = ":/images/terrs.jpg";
-
-
-
-    weaponImages["oneStand"] = ":/images/oneStand.png";
-    weaponImages["5Stand"]   = ":/images/5Stand.png";
-    weaponImages["twoStand"] = ":/images/twoStand.png";
-
-    weaponImages["fireStand"] = ":/images/fireStand.png";
-    weaponImages["WaterStand"] = ":/images/waterStand.png";
-    weaponImages["terraStand"] = ":/images/terraStand.png";
-    weaponImages["airStand"] = ":/images/airStand.png";
-
-
-    weaponImages["oneAttack"] = ":/images/oneAttack.png";
-    weaponImages["5Attack"]   = ":/images/5Attack.png";
-    weaponImages["twoAttack"] = ":/images/twoAttack.png";
 
 
     ui->setupUi(this);

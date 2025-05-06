@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QMap>
 #include "Versus.h"
+#include <QLineEdit>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,6 +19,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    QLineEdit* getLineEdit2() const; //для тестов
+    QLineEdit* getweaponName() const;
 
 private slots: // Обязательно укажите private slots, так как это слот
     void checkAndConnect();

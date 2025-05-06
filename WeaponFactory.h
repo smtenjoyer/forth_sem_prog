@@ -1,8 +1,8 @@
 #ifndef WEAPONFACTORY_H
 #define WEAPONFACTORY_H
 #pragma once
-#include "Weapon.h"
-#include "Fighter.h"
+#include "weapon.h"
+#include "fighter.h"
 
 class WeaponFactory {
 public:
