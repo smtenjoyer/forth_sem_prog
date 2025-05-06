@@ -8,6 +8,8 @@
 #include "Versus.h"
 #include <QEventLoop>
 #include <QTimer>
+#include <QRegularExpression>
+#include <QRegularExpressionValidator>
 
 QLineEdit* MainWindow::getLineEdit2() const {
     return ui->lineEdit_2;
@@ -313,20 +315,22 @@ MainWindow::MainWindow(QWidget *parent)
     });
 
 
-    QValidator *validator = new QRegularExpressionValidator(QRegularExpression(".+"), this);
-    ui->lineEdit_2->setValidator(validator);
+    QRegularExpressionValidator *nameValidator = new QRegularExpressionValidator(QRegularExpression("^[a-zA-Zа-яА-Я]{1,20}$"), this); // Только буквы, от 1 до 20 символов.
+    ui->lineEdit_2->setValidator(nameValidator);
+
     connect(ui->lineEdit_2, &QLineEdit::returnPressed, this, [this](){
         if (ui->lineEdit_2->hasAcceptableInput()) {
-
             playerName = ui->lineEdit_2->text().toStdString();
             Hero->SetName(playerName);
             ui->stackedWidget->setCurrentIndex(2);
-        }else {
-
-            disconnect(ui->lineEdit_2, &QLineEdit::returnPressed, this, nullptr);
+        } else {
+            ui->lineEdit_2->clear();
+            ui->lineEdit_2->setFocus();
         }
     });
 
+    QRegularExpressionValidator *weaponNameValidator = new QRegularExpressionValidator(QRegularExpression("^[a-zA-Zа-яА-Я]{1,20}$"), this); // Только буквы, от 1 до 20 символов
+    ui->weaponName->setValidator(weaponNameValidator);
 
     disconnect(ui->weaponName, &QLineEdit::returnPressed, this, nullptr);
 
